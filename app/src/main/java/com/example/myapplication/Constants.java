@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 public class Constants {
+
     // List of weather types
     public static final String image_names[] = {
             "Clouds",
