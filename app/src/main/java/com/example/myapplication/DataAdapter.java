@@ -19,8 +19,8 @@ import java.util.ArrayList;
 
 public class DataAdapter extends RecyclerView.Adapter<ViewRow> {
 
-    public ArrayList<MainActivity.Image> arrayList;
-    public DataAdapter(ArrayList<MainActivity.Image> arr){
+    public ArrayList<Image> arrayList;
+    public DataAdapter(ArrayList<Image> arr){
         this.arrayList = arr;
     }
 
@@ -50,14 +50,3 @@ public class DataAdapter extends RecyclerView.Adapter<ViewRow> {
     }
 }
 
-    class ViewRow extends RecyclerView.ViewHolder {
-
-        TextView tv;
-        ImageView imageView;
-
-        public ViewRow(@NonNull View itemView) {
-            super(itemView);
-            tv = itemView.findViewById(R.id.textView);
-            imageView = itemView.findViewById(R.id.imageView);
-        }
-    }
